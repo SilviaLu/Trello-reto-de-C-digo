@@ -1,19 +1,13 @@
+// ventana de inicio y de carga
 window.addEventListener("click", inicio);
 
+// variables
 var addListBtn = document.getElementById('add-list-button');
 var listItems = document.getElementById('list-items');
 var input = document.getElementsByName('list-title')[0];
 var createItemHTML = function(listItem){
-	// <div class='item'>
-	//   <p class='title'>titulo lista 1</p>
-	//   <ol class='tasks'>
-	//       <li>taks: Coffee</li>
-	//       <li>taks: Tea</li>
-	//       <li>taks: Milk</li>
-	//   </ol>
-	//   <input type="text" placeholder="new task">
-	//   <button id='add-task-button'>Add Task</button>        
-	// </div>
+
+	// comentado abajo
 
 	var item = document.createElement('div');
 	item.classList.add('item');
@@ -85,3 +79,17 @@ var initialize = function(){
 addListBtn.addEventListener('click', addNewList)
 
 initialize();
+
+
+
+
+	// <div class='item'>
+	//   <p class='title'>titulo lista 1</p>
+	//   <ol class='tasks'>
+	//       <li>taks: Coffee</li>
+	//       <li>taks: Tea</li>
+	//       <li>taks: Milk</li>
+	//   </ol>
+	//   <input type="text" placeholder="new task">
+	//   <button id='add-task-button'>Add Task</button>        
+	// </div>
