@@ -4,48 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+		<title>Document</title>
+		<link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 			<header>
-				<div class="left">
-						<div class="logoLeft">
+				<div class="navLeft">
+						<div class="icon-left">
 								<i class="fa fa-trello" aria-hidden="true"></i>
-								<p>Tableros</p>
+								<span>Tableros</span>
 						</div>
 						<div class="search">
 								<i class="fa fa-search" aria-hidden="true"></i>
 							</div>
 				</div>
-				<img src="assets/images/trelloLogoWhite.svg" alt="Trello Logo">
+				<img src="assets/images/trelloLogoWhite.svg" alt="Logo Trello">
 
 				<div class="navRight">
-					<ul>
-						<li class="icontrue"><i class="fa fa-plus" aria-hidden="true"></i></li>
-						<li class="circle"><i class="fa fa-exclamation" aria-hidden="true"></i></li>
-						<li class="bell"><i class="fa fa-bell-o" aria-hidden="true"></i></li>
-						<li class="user">SV</li>
-				</ul>
+						<div class="iconPlus">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+            <div class="iconExclamacion">
+                <div class="circle">
+                    <i class="fa fa-exclamation" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class='iconRing'>
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+            </div>
+            <div class="user"><p  class="id-user">SV</p></div>
 				</div>
 
 		</header>
 		<section class="oneSection">
-				<h3>Tablero - Reto de Código </h3>
-				<a href="#">
-						<i class="fa fa-star-o" aria-hidden="true"></i>
-				</a>
-				<a href="#">
-						<i class="fa fa-address-book" aria-hidden="true"></i>
-						<h5>Privado</h5>
-				</a>
-				<a class="rightMenu" href="#">
-						<i class="fa fa-minus" aria-hidden="true"></i>...Mostrar menú</a>
+			<h3>Tablero - Reto de Código </h3>
+			<a href="#">
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+			</a>
+			<a class="private" href="#">
+					<i class="fa fa-address-book" aria-hidden="true"></i>
+					<span>Privado</span>
+			</a>
+			<a class="rightMenu" href="#">
+					<i class="fa fa-minus" aria-hidden="true"></i>...Mostrar menú</a>
 		</section>
 		<section id="container">
-				<div id='addlist' class="boxAdd">
-						<p id='initialSpan'>Añadir una lista...</p>
-				</div>
-		</section>
+        <div id='boxAdd-js' class="boxAdd">
+            <span id='initialSpan'>Añadir una lista...</span>
+        </div>
+    </section>
+
+	<!-- comentado abajo -->
+
 		<script src="js/app.js"></script>
+		
 </body>
 </html>
+
+	<!-- <section id="container">
+			<div id='add-list-item'>
+					<form action="">
+						<div for="list-title"></div>
+						<input type="text" name='list-title' placeholder="Añadir una lista..."><br>
+						<button id='add-list-button'>Guardar</button>        
+					</form>   
+			</div>
+			
+				<div id='list-items'>
+				</div>
+		</section> -->
